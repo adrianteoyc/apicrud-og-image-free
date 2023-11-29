@@ -23,15 +23,16 @@ export async function GET(req) {
 
     const fontData1 = await font1.arrayBuffer();
 
-    const font2 = await fetch(
-      new URL("/public/NotoSans-Regular.ttf", import.meta.url)
-    );
+    // You can use another font if you subscribe to vercel Pro plan with code size limit of 2MB
+    // const font2 = await fetch(
+    //   new URL("/public/NotoSans-Regular.ttf", import.meta.url)
+    // );
 
-    if (!font2.ok) {
-      throw new Error("Failed to fetch the font file");
-    }
+    // if (!font2.ok) {
+    //   throw new Error("Failed to fetch the font file");
+    // }
 
-    const fontData2 = await font2.arrayBuffer();
+    // const fontData2 = await font2.arrayBuffer();
 
     // dynamic params| ?title=your%20title | %20 = space in url, %0D next line
     // Example: ?title=number%20one%20remote%0Djob%20app
@@ -73,7 +74,7 @@ export async function GET(req) {
                 textTransform: titleTextTransform,
                 lineHeight: titleLineHeight,
                 letterSpacing: titleLetterSpacing,
-                fontFamily: "Regular",
+                fontFamily: "Inyer",
               }}
             >
               {title}
@@ -86,7 +87,7 @@ export async function GET(req) {
                 fontSize: subtitleFontSize,
                 color: subtitleTextColor,
                 marginTop: "32px",
-                fontFamily: '"Inter"',
+                fontFamily: "Inter",
               }}
             >
               {subtitle}
@@ -105,11 +106,11 @@ export async function GET(req) {
             data: fontData1,
             style: "normal",
           },
-          {
-            name: "Regular",
-            data: fontData2,
-            style: "normal",
-          },
+          // {
+          //   name: "Regular",
+          //   data: fontData2,
+          //   style: "normal",
+          // },
         ],
       }
     );
