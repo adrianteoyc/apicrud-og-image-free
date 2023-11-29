@@ -2,8 +2,6 @@ import React from "react";
 import Link from "next/link";
 
 const page = async () => {
-  // dynamic params
-
   return (
     <>
       <ul className="list-decimal list-inside ml-4 mt-4">
@@ -24,13 +22,13 @@ const page = async () => {
         <li>
           <ul className="list-disc list-inside ml-4">
             <li>
-              <Link href="/api/ogdesign/2center-with-title-subtitle-diff-font">
-                Center title and subtitle with different font type
+              <Link href="/api/ogdesign/2center-with-title-subtitle-external-font">
+                Center title and subtitle with external font type
               </Link>
             </li>
             <li>
-              <Link href="/api/ogdesign/2center-with-title-subtitle-diff-font?title=number%20one%20remote%0Djob%20app&subtitle=https://www.interviewtogether.com/">
-                Center title and subtitle with different font type with
+              <Link href="/api/ogdesign/2center-with-title-subtitle-external-font?title=number%20one%20remote%0Djob%20app&subtitle=https://www.interviewtogether.com/">
+                Center title and subtitle with external font type with
                 parameters{" "}
               </Link>
             </li>
