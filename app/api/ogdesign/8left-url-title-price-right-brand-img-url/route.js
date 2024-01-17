@@ -15,7 +15,7 @@ export async function GET(req) {
 
     // dynamic params
     const title = searchParams.has("title")
-      ? searchParams.get("title")?.slice(0, 100)
+      ? searchParams.get("title")
       : "Cycling Cat - Cyclone Chee Japanese Handmade Cycling Cap";
     const website = searchParams.get("website") || " https://takachya.cc/";
     const price = searchParams.get("price") || "$59.00";
