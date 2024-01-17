@@ -67,7 +67,7 @@ export const categoryList = [
         image:
           siteURL + "/api/ogdesign/8left-url-title-price-right-brand-img-url",
         path:
-          siteURL + "/api/ogdesign/8left-url-title-price-right-brand-img-url?title=Soma no Kouchi Ura - Cyclone Chee Japanese Handmade Cycling Cap&website=https://takachya.cc/&price=$69.99&image=https://takachya.cc/cdn/shop/products/CycloneCheeOldPalaceSomaBlack_002_823x.jpg?v=1643475520",
+          siteURL + "/api/ogdesign/8left-url-title-price-right-brand-img-url?title=Soma%20no%20Kouchi%20Ura%20-%20Cyclone%20Chee%20Japanese%20Handmade%20Cycling%20Cap&website=https://takachya.cc/&price=$69.99&image=https://takachya.cc/cdn/shop/products/CycloneCheeOldPalaceSomaBlack_002_823x.jpg?v=1643475520",
       },
       {
         id: 9,
