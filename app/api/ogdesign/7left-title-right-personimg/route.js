@@ -16,7 +16,9 @@ export async function GET(req) {
       ? searchParams.get("title")?.slice(0, 100)
       : "My default title for this design page";
 
-    const image = await fetch(
+    const image =  searchParams.has("image")
+    ? searchParams.get("image")
+    : await fetch(
       new URL("/public/person-with-speaker.jpg", import.meta.url)
     ).then((res) => res.arrayBuffer());
 
