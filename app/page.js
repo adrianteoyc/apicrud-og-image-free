@@ -29,7 +29,7 @@ const Page = () => {
 
 
   return (
-    <div className="bg-white">
+    <div className="bg-white text-black">
       <Content
         ogImages={filteredOgImages}
       />
