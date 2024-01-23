@@ -44,7 +44,13 @@ export const categoryList = [
         name: "Center title with logo-url",
         categories: ["Center", "Image", "Logo", "Free"],
         image: siteURL + "/api/ogdesign/5center-title-logo-url",
-        path: siteURL + "/api/ogdesign/5center-title-logo-url?title=APICrud&logo=https://images.pexels.com/photos/170809/pexels-photo-170809.jpeg?auto=compress&cs=tinysrgb&w=600",
+        path:
+          siteURL +
+          "/api/ogdesign/5center-title-logo-url?title=APICrud&logo=" +
+          siteURL +
+          "/5logo1.jpeg",
+        //source:
+        // https://images.pexels.com/photos/170809/pexels-photo-170809.jpeg?auto=compress&cs=tinysrgb&w=600"
       },
       {
         id: 6,
@@ -58,7 +64,13 @@ export const categoryList = [
         name: "Left title and right personimg",
         categories: ["Image", "Gradient", "Free"],
         image: siteURL + "/api/ogdesign/7left-title-right-personimg",
-        path: siteURL + "/api/ogdesign/7left-title-right-personimg?title=APICrud&image=https://images.pexels.com/photos/9978709/pexels-photo-9978709.jpeg?auto=compress&cs=tinysrgb&w=600",
+        path:
+          siteURL +
+          "/api/ogdesign/7left-title-right-personimg?title=APICrud&image=" +
+          siteURL +
+          "/7image1.jpeg",
+        //sources:
+        // image=https://images.pexels.com/photos/9978709/pexels-photo-9978709.jpeg?auto=compress&cs=tinysrgb&w=600",
       },
       {
         id: 8,
@@ -67,14 +79,17 @@ export const categoryList = [
         image:
           siteURL + "/api/ogdesign/8left-url-title-price-right-brand-img-url",
         path:
-          siteURL + "/api/ogdesign/8left-url-title-price-right-brand-img-url?title=Soma%20no%20Kouchi%20Ura%20-%20Cyclone%20Chee%20Japanese%20Handmade%20Cycling%20Cap&website=https://takachya.cc/&price=$69.99&image=https://takachya.cc/cdn/shop/products/CycloneCheeOldPalaceSomaBlack_002_823x.jpg?v=1643475520",
+          siteURL +
+          "/api/ogdesign/8left-url-title-price-right-brand-img-url?title=Soma%20no%20Kouchi%20Ura%20-%20Cyclone%20Chee%20Japanese%20Handmade%20Cycling%20Cap&website=https://takachya.cc/&price=$69.99&image=" +
+          siteURL +
+          "/8image1.jpg",
       },
       {
         id: 9,
         name: "Slanted Title",
         categories: ["Slanted", "Center", "Free"],
         image: siteURL + "/api/ogdesign/9slanted-title",
-        path:siteURL + "/api/ogdesign/9slanted-title?title=APICrud",
+        path: siteURL + "/api/ogdesign/9slanted-title?title=APICrud",
       },
       {
         id: 10,

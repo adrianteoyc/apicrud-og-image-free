@@ -1,5 +1,6 @@
 import React from "react";
 import { ImageResponse } from "@vercel/og";
+export const runtime = "edge";
 
 const bgColor = "white";
 const titleLineHeight = "1em";
@@ -19,9 +20,11 @@ export async function GET(req) {
       : "Cycling Cat - Cyclone Chee Japanese Handmade Cycling Cap";
     const website = searchParams.get("website") || " https://takachya.cc/";
     const price = searchParams.get("price") || "$59.00";
-    const image =
-      searchParams.get("image") ||
-      "https://takachya.cc/cdn/shop/products/CycloneCheeCyclingCapCyclingCat_002_823x.jpg?v=1664428129";
+    const image = searchParams.has("image")
+    ? searchParams.get("image")
+    : await fetch(new URL("/public/design8-img.jpg", import.meta.url)).then(
+        (res) => res.arrayBuffer()
+      );
 
     return new ImageResponse(
       (
