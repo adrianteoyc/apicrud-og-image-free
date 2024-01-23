@@ -48,7 +48,7 @@ export const categoryList = [
           siteURL +
           "/api/ogdesign/5center-title-logo-url?title=APICrud&logo=" +
           siteURL +
-          "/5logo1.jpeg",
+          "/image/5logo1.jpeg",
         //source:
         // https://images.pexels.com/photos/170809/pexels-photo-170809.jpeg?auto=compress&cs=tinysrgb&w=600"
       },
