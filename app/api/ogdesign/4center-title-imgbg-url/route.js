@@ -1,4 +1,5 @@
 import { ImageResponse } from "@vercel/og";
+import Image from "next/image";
 export const runtime = "edge";
 
 
@@ -34,7 +35,7 @@ export async function GET(req) {
             backgroundColor: "black",
           }}
         >
-          <img
+          {/* <img
             style={{
               objectFit: "cover",
               position: "absolute",
@@ -44,7 +45,16 @@ export async function GET(req) {
               opacity: "0.8",
             }}
             src={image}
-          />
+          /> */}
+          <Image  style={{
+              objectFit: "cover",
+              position: "absolute",
+              // inset: "0px",
+              width: "100%",
+              height: "100%",
+              opacity: "0.8",
+            }}
+            src={image} />
 
           <div
             style={{
