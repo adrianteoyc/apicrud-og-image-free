@@ -1,7 +1,6 @@
 import { ImageResponse } from "@vercel/og";
-import Image from "next/image";
-export const runtime = "edge";
 
+export const runtime = "edge";
 
 const titleFontSize = "80px";
 const titleTextTransform = "capitalize";
@@ -17,7 +16,7 @@ export async function GET(req) {
       ? searchParams.get("title")
       : "My default title";
 
-      const image = searchParams.has("image")
+    const image = searchParams.has("image")
       ? searchParams.get("image")
       : await fetch(new URL("/public/design4-bg.jpg", import.meta.url)).then(
           (res) => res.arrayBuffer()
@@ -35,7 +34,7 @@ export async function GET(req) {
             backgroundColor: "black",
           }}
         >
-          {/* <img
+          <img
             style={{
               objectFit: "cover",
               position: "absolute",
@@ -45,16 +44,7 @@ export async function GET(req) {
               opacity: "0.8",
             }}
             src={image}
-          /> */}
-          <Image  style={{
-              objectFit: "cover",
-              position: "absolute",
-              // inset: "0px",
-              width: "100%",
-              height: "100%",
-              opacity: "0.8",
-            }}
-            src={image} />
+          />
 
           <div
             style={{
