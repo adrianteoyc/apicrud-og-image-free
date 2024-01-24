@@ -1,5 +1,4 @@
 import { ImageResponse } from "@vercel/og";
-
 export const runtime = "edge";
 
 const titleFontSize = "80px";
@@ -16,7 +15,8 @@ export async function GET(req) {
       ? searchParams.get("title")
       : "My default title";
 
-    const image = searchParams.has("image")
+   
+      const image = searchParams.has("image")
       ? searchParams.get("image")
       : await fetch(new URL("/public/design4-bg.jpg", import.meta.url)).then(
           (res) => res.arrayBuffer()
