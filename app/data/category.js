@@ -1,7 +1,7 @@
 let siteURL = "http://localhost:3000";
 const env = process.env.NODE_ENV;
 if (env == "production") {
-  siteURL = "https://www.apicrud.com";
+  siteURL = "https://apicrud-og-image-free.vercel.app";
 }
 
 export const categoryList = [
