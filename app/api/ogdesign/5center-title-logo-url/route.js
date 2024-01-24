@@ -21,7 +21,7 @@ export async function GET(req) {
     const logoFromURL = searchParams.has("logo")
       ? searchParams.get("logo")
       : await fetch(
-          new URL("/public/interview-together-logo-200x.png", import.meta.url)
+          new URL("/public/vercel-og-assets/image/interview-together-logo-200x.png", import.meta.url)
         ).then((res) => res.arrayBuffer());
     // console.log("logoFromURL", logoFromURL);
 

@@ -14,7 +14,7 @@ export async function GET(req) {
     const { searchParams } = new URL(req.url);
 
     const font1 = await fetch(
-      new URL("/public/Inter-Bold.ttf", import.meta.url)
+      new URL("/public/vercel-og-assets/font/Inter-Bold.ttf", import.meta.url)
     );
 
     if (!font1.ok) {

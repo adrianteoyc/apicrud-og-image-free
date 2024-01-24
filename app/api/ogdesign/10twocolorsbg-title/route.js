@@ -13,7 +13,7 @@ export async function GET(req) {
     const { searchParams } = new URL(req.url);
 
     const fontResponse = await fetch(
-      new URL("/public/italic.ttf", import.meta.url)
+      new URL("/public/vercel-og-assets/font/italic.ttf", import.meta.url)
     );
 
     if (!fontResponse.ok) {
