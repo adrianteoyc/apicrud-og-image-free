@@ -48,7 +48,7 @@ export const categoryList = [
           siteURL +
           "/api/ogdesign/5center-title-logo-url?title=APICrud&logo=" +
           siteURL +
-          "/image/5logo1.jpeg",
+          "/vercel-og-assets/image/5logo1.jpeg",
         //source:
         // https://images.pexels.com/photos/170809/pexels-photo-170809.jpeg?auto=compress&cs=tinysrgb&w=600"
       },
@@ -68,7 +68,7 @@ export const categoryList = [
           siteURL +
           "/api/ogdesign/7left-title-right-personimg?title=APICrud&image=" +
           siteURL +
-          "/7image1.jpeg",
+          "/vercel-og-assets/image/7image1.jpeg",
         //sources:
         // image=https://images.pexels.com/photos/9978709/pexels-photo-9978709.jpeg?auto=compress&cs=tinysrgb&w=600",
       },
@@ -82,7 +82,7 @@ export const categoryList = [
           siteURL +
           "/api/ogdesign/8left-url-title-price-right-brand-img-url?title=Soma%20no%20Kouchi%20Ura%20-%20Cyclone%20Chee%20Japanese%20Handmade%20Cycling%20Cap&website=https://takachya.cc/&price=$69.99&image=" +
           siteURL +
-          "/8image1.jpg",
+          "/vercel-og-assets/image/8image1.jpg",
       },
       {
         id: 9,
