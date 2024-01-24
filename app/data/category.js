@@ -37,7 +37,7 @@ export const categoryList = [
         name: "Center title with background image-url",
         categories: ["Center", "Background-Image", "Free"],
         image: siteURL + "/api/ogdesign/4center-title-imgbg-url",
-        path: siteURL + "/api/ogdesign/4center-title-imgbg-url?title=APICrud",
+        path: siteURL + "/api/ogdesign/4center-title-imgbg-url?title=APICru",
       },
       {
         id: 5,

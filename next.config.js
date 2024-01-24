@@ -14,6 +14,10 @@ const nextConfig = {
           protocol: "https",
           hostname: "apicrud-og-image-free.vercel.app", // if your website has no www, drop it
         },
+        {
+          protocol: "https",
+          hostname: "apicrud-og-image-premium.vercel.app", // if your website has no www, drop it
+        },
       ],
     },
   };
