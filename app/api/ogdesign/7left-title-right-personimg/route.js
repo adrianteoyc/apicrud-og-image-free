@@ -19,7 +19,7 @@ export async function GET(req) {
     const image =  searchParams.has("image")
     ? searchParams.get("image")
     : await fetch(
-      new URL("/public/person-with-speaker.jpg", import.meta.url)
+      new URL("/public/vercel-og-assets/image/person-with-speaker.jpg", import.meta.url)
     ).then((res) => res.arrayBuffer());
 
     return new ImageResponse(
