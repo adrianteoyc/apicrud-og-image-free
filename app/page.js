@@ -4,8 +4,6 @@ import { categoryList } from "./data/category";
 
 import Content from "./_components/Content";
 
-
-
 const Page = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
@@ -27,12 +25,26 @@ const Page = () => {
     return categoryMatches && searchMatches;
   });
 
-
   return (
     <div className="bg-white text-black">
-      <Content
-        ogImages={filteredOgImages}
-      />
+      <div className="flex flex-col gap-y-8 justify-center mt-8">
+        <h1 className="text-4xl font-semibold text-center pt-8">
+          Beautiful Open Graph Static Images With <br />
+          Source Codes In Next.js
+        </h1>
+        <div></div>
+        <div className="text-center">
+          👉
+          <a
+            href="https://www.apicrud.com/source-codes/og-image-gallery"
+            target="_blank"
+            className="underline"
+          >
+            Download at APIcrud
+          </a>
+        </div>
+      </div>
+      <Content ogImages={filteredOgImages} />
     </div>
   );
 };
